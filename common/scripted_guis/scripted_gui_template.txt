@@ -1,0 +1,43 @@
+scripted_gui = {
+  politics_menu = {
+    window_name = "politics_menu_window"
+    context_type = player_context
+    parent_window_token = politics_tab
+
+    visible = {
+		  always = yes
+    }
+
+    effects = {
+      politics_button_click = {
+        set_country_flag = "politics_menu_open"
+      }
+    }
+
+    triggers = {
+    }
+
+    dynamic_lists = {
+    }
+
+    properties = {
+    }
+
+    ai_enabled = {
+		always = no
+    }
+
+    ai_test_interval = 290  # The higher, the long it takes the ai to do actions 
+    
+    ai_test_variance = 0.5
+
+    ai_check = {
+    }
+
+    ai_check_scope = {
+    }
+
+    ai_weights = {
+    }
+  }
+}
